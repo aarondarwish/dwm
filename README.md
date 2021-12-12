@@ -1,5 +1,5 @@
 # `dwm`
-A fork of `dwm` with added features, and enhanced aesthetics.
+My custom build of dwm with added features, and enhanced aesthetics.
 
 To install, simply execute:
 ```bash
