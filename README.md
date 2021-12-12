@@ -7,7 +7,7 @@ git clone https://github.com/aaron-darwish/dwm
 cd dwm
 sudo make install
 ```
-If you make a change and wish for them to take effect, simply run:
+If you make a change and wish for it to take effect, simply run:
 ```console
 sudo make clean install
 ```
