@@ -2,7 +2,7 @@
 My custom build of dwm with added features, and enhanced aesthetics.
 
 To install, simply execute:
-```bash
+```console
 git clone https://github.com/aaron-darwish/dwm ~/.dwm
 cd ~/.dwm
 sudo make install
