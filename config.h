@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Constants */
-#define TERMINAL "alacritty"
-#define TERMCLASS "Alacritty"
+#define TERMINAL "st"
+#define TERMCLASS "St"
 
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -34,7 +34,7 @@ typedef struct {
 } Sp;
 //const char *spcmd1[] = {TERMINAL, "-n", "spterm", "-g", "120x34", NULL };
 //const char *spcmd2[] = {TERMINAL, "-n", "spcalc", "-f", "monospace:size=16", "-g", "50x20", "-e", "bc", "-lq", NULL };
-const char *spcmd1[] = {"st", "-n", "spterm", "-g", "200x40", NULL };
+const char *spcmd1[] = {"st", "-n", "spterm", "-g", "200x50", NULL };
 const char *spcmd2[] = {"st", "-n", "spcalc", "-f", "monospace:size=16", "-g", "90x40", "-e", "bc", "-lq", NULL };
 
 static Sp scratchpads[] = {
