@@ -2,7 +2,7 @@
 
 /* Constants */
 #define TERMINAL "alacritty"
-#define TERMCLASS "alacritty"
+#define TERMCLASS "Alacritty"
 
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
