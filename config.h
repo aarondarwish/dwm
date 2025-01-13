@@ -251,10 +251,10 @@ static Key keys[] = {
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
-	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
-	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
-	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
+//	{ 0,				XK_Print,	spawn,		SHCMD("maim pic-full-$(date '+%y%m%d-%H%M-%S').png") },
+//	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
+//	{ MODKEY,			XK_Print,	spawn,		SHCMD("dmenurecord") },
+//	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
 	{ MODKEY,			XK_Scroll_Lock,	spawn,		SHCMD("killall screenkey || screenkey &") },
 
@@ -302,7 +302,11 @@ static Key keys[] = {
 	/* { MODKEY|Mod4Mask,              XK_o,      incrohgaps,     {.i = -1 } }, */
 	/* { MODKEY|ShiftMask,             XK_y,      incrovgaps,     {.i = +1 } }, */
 	/* { MODKEY|ShiftMask,             XK_o,      incrovgaps,     {.i = -1 } }, */
-
+  /* Screenshot Keybindings */
+  { MODKEY,                       XK_Print,      spawn, SHCMD("maim ~/Pictures/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Saved to ~/Pictures'") },
+  { MODKEY|ShiftMask,             XK_Print,      spawn, SHCMD("maim -s ~/Pictures/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Selection saved to ~/Pictures'") },
+  { MODKEY|ControlMask,           XK_Print,      spawn, SHCMD("maim -s | xclip -selection clipboard -t image/png && notify-send 'Screenshot copied' 'Selection copied to clipboard'") },
+  { MODKEY|ShiftMask,             XK_F1,         spawn, SHCMD("flameshot gui") },
 };
 
 /* button definitions */
