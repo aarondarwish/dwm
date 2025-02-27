@@ -303,8 +303,8 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,             XK_y,      incrovgaps,     {.i = +1 } }, */
 	/* { MODKEY|ShiftMask,             XK_o,      incrovgaps,     {.i = -1 } }, */
   /* Screenshot Keybindings */
-  { MODKEY,                       XK_Print,      spawn, SHCMD("maim ~/Media/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Saved to ~/Media'") },
-  { MODKEY|ShiftMask,             XK_Print,      spawn, SHCMD("maim -s ~/Media/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Selection saved to ~/Media'") },
+  { MODKEY,                       XK_Print,      spawn, SHCMD("maim ~/Media/screenshots/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Saved to ~/Media/screenshots'") },
+  { MODKEY|ShiftMask,             XK_Print,      spawn, SHCMD("maim -s ~/Media/screenshots/screenshot-$(date '+%Y%m%d-%H%M%S').png && notify-send 'Screenshot saved' 'Selection saved to ~/Media/screenshots'") },
   { MODKEY|ControlMask,           XK_Print,      spawn, SHCMD("maim -s | xclip -selection clipboard -t image/png && notify-send 'Screenshot copied' 'Selection copied to clipboard'") },
   { MODKEY|ShiftMask,             XK_F1,         spawn, SHCMD("flameshot gui") },
 };
